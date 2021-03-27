@@ -20,8 +20,12 @@
 		<key>Patch</key>
 		<array>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
-				<string>GPRW to XPRW</string>
+				<string>UPRW to XPRW</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -983,13 +987,15 @@
 			<dict>
 				<key>rtc-blacklist</key>
 				<data></data>
+				<key>opencore-version</key>
+				<data></data>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 brcmfx-country=#a -noDC9</string>
+				<string>-v keepsyms=1 -noDC9</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1062,7 +1068,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02003100GU00008C</string>
+			<string>C02032700GU0000JA</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1074,9 +1080,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02C40ZLML7H</string>
+			<string>C02D66ZWML7H</string>
 			<key>SystemUUID</key>
-			<string>4F55C6FD-709C-44EA-9E74-A714151365FA</string>
+			<string>0251AEF2-85AB-4C2D-914B-1EC7F7D07284</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -1087,13 +1093,13 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02003100GU00008C</string>
+			<string>C02032700GU0000JA</string>
 			<key>ROM</key>
 			<data>sInNuVSJ</data>
 			<key>SystemSerialNumber</key>
 			<string></string>
 			<key>SystemUUID</key>
-			<string>4F55C6FD-709C-44EA-9E74-A714151365FA</string>
+			<string>85DC110D-2DC9-4246-AEEB-6882F0B321CF</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
