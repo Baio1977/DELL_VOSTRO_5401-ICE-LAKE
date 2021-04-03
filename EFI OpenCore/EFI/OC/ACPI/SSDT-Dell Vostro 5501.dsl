@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLt2XTZo.aml, Sat Mar 27 11:17:33 2021
+ * Disassembly of iASLQWmWKi.aml, Sat Apr  3 13:45:21 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000601 (1537)
+ *     Length           0x000007BC (1980)
  *     Revision         0x02
- *     Checksum         0x03
+ *     Checksum         0xEB
  *     OEM ID           "Hack"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
@@ -30,9 +30,16 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
     External (_SB_.PCI0.LPCB, DeviceObj)
     External (_SB_.PCI0.LPCB.ECDV, DeviceObj)
     External (_SB_.PCI0.LPCB.PS2K, DeviceObj)
+    External (_SB_.PCI0.RP08, DeviceObj)
+    External (_SB_.PCI0.RP08.PXSX, DeviceObj)
+    External (_SB_.PCI0.RP09, DeviceObj)
+    External (_SB_.PCI0.RP09.PXSX, DeviceObj)
+    External (_SB_.PCI0.RP13, DeviceObj)
+    External (_SB_.PCI0.RP13.PXSX, DeviceObj)
     External (_SB_.PCI0.SBUS, DeviceObj)
     External (_SB_.PR00, ProcessorObj)
     External (_SB_.UBTC, DeviceObj)
+    External (GBES, IntObj)
     External (STAS, IntObj)
     External (TPDM, FieldUnitObj)
     External (XPRW, MethodObj)    // 2 Arguments
@@ -196,6 +203,29 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
                     }
                 }
 
+                Device (FWHD)
+                {
+                    Name (_HID, EisaId ("INT0800") /* Intel 82802 Firmware Hub Device */)  // _HID: Hardware ID
+                    Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+                    {
+                        Memory32Fixed (ReadOnly,
+                            0xFF000000,         // Address Base
+                            0x01000000,         // Address Length
+                            )
+                    })
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (0x0F)
+                        }
+                        Else
+                        {
+                            Return (Zero)
+                        }
+                    }
+                }
+
                 Device (PMCR)
                 {
                     Name (_HID, EisaId ("APP9876"))  // _HID: Hardware ID
@@ -260,6 +290,108 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
                     Else
                     {
                         Return (Zero)
+                    }
+                }
+            }
+
+            Scope (RP08)
+            {
+                Scope (PXSX)
+                {
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (Zero)
+                        }
+                        Else
+                        {
+                            Return (0x0F)
+                        }
+                    }
+                }
+
+                Device (GIGE)
+                {
+                    Name (_ADR, Zero)  // _ADR: Address
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (0x0F)
+                        }
+                        Else
+                        {
+                            Return (Zero)
+                        }
+                    }
+                }
+            }
+
+            Scope (RP09)
+            {
+                Scope (PXSX)
+                {
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (Zero)
+                        }
+                        Else
+                        {
+                            Return (0x0F)
+                        }
+                    }
+                }
+
+                Device (SSD0)
+                {
+                    Name (_ADR, Zero)  // _ADR: Address
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (0x0F)
+                        }
+                        Else
+                        {
+                            Return (Zero)
+                        }
+                    }
+                }
+            }
+
+            Scope (RP13)
+            {
+                Scope (PXSX)
+                {
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (Zero)
+                        }
+                        Else
+                        {
+                            Return (0x0F)
+                        }
+                    }
+                }
+
+                Device (SSD1)
+                {
+                    Name (_ADR, Zero)  // _ADR: Address
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (0x0F)
+                        }
+                        Else
+                        {
+                            Return (Zero)
+                        }
                     }
                 }
             }
