@@ -67,7 +67,16 @@
 	<key>Booter</key>
 	<dict>
 		<key>MmioWhitelist</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Address</key>
+				<integer>4284481536</integer>
+				<key>Comment</key>
+				<string>MMIO 0xFF600000</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+		</array>
 		<key>Patch</key>
 		<array/>
 		<key>Quirks</key>
@@ -505,24 +514,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>AirportBrcmFixup.kext/Contents/PlugIns/AirPortBrcmNIC_Injector.kext</string>
-				<key>Comment</key>
-				<string>WI-FI patches</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>BrcmBluetoothInjector.kext</string>
 				<key>Comment</key>
 				<string>BT patches</string>
@@ -830,7 +821,7 @@
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -1043,21 +1034,21 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02006270CD0000JC</string>
+			<string>C02038404J900001M</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
 			<data>sInNuVSJ</data>
 			<key>SpoofVendor</key>
-			<false/>
+			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02C7NYMML7H</string>
+			<string>C02DF7ZLML7H</string>
 			<key>SystemUUID</key>
-			<string>6E57C2C1-E0AF-4F56-8F33-B508B64C529A</string>
+			<string>0E7A67E2-5D3C-44CE-B68A-CC606E56CDD3</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -1068,13 +1059,13 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02006270CD0000JC</string>
+			<string>C02038404J900001M</string>
 			<key>ROM</key>
 			<data>sInNuVSJ</data>
 			<key>SystemSerialNumber</key>
-			<string>C02C7NYMML7H</string>
+			<string>C02DF7ZLML7H</string>
 			<key>SystemUUID</key>
-			<string>6E57C2C1-E0AF-4F56-8F33-B508B64C529A</string>
+			<string>0E7A67E2-5D3C-44CE-B68A-CC606E56CDD3</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1102,6 +1093,21 @@
 			<key>MinDate</key>
 			<integer>0</integer>
 			<key>MinVersion</key>
+			<integer>0</integer>
+		</dict>
+		<key>AppleInput</key>
+		<dict>
+			<key>AppleEvent</key>
+			<string>Auto</string>
+			<key>CustomDelays</key>
+			<string>Auto</string>
+			<key>KeyInitialDelay</key>
+			<integer>0</integer>
+			<key>KeySubsequentDelay</key>
+			<integer>0</integer>
+			<key>PointerSpeedDiv</key>
+			<integer>1</integer>
+			<key>PointerSpeedMul</key>
 			<integer>0</integer>
 		</dict>
 		<key>Audio</key>

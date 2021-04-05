@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLQWmWKi.aml, Sat Apr  3 13:45:21 2021
+ * Disassembly of iASLj1XJfT.aml, Mon Apr  5 21:02:37 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000007BC (1980)
+ *     Length           0x00000777 (1911)
  *     Revision         0x02
- *     Checksum         0xEB
+ *     Checksum         0x5A
  *     OEM ID           "Hack"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
@@ -203,29 +203,6 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
                     }
                 }
 
-                Device (FWHD)
-                {
-                    Name (_HID, EisaId ("INT0800") /* Intel 82802 Firmware Hub Device */)  // _HID: Hardware ID
-                    Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
-                    {
-                        Memory32Fixed (ReadOnly,
-                            0xFF000000,         // Address Base
-                            0x01000000,         // Address Length
-                            )
-                    })
-                    Method (_STA, 0, NotSerialized)  // _STA: Status
-                    {
-                        If (_OSI ("Darwin"))
-                        {
-                            Return (0x0F)
-                        }
-                        Else
-                        {
-                            Return (Zero)
-                        }
-                    }
-                }
-
                 Device (PMCR)
                 {
                     Name (_HID, EisaId ("APP9876"))  // _HID: Hardware ID
@@ -345,7 +322,7 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
                     }
                 }
 
-                Device (SSD0)
+                Device (ANS0)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
                     Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -379,7 +356,7 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
                     }
                 }
 
-                Device (SSD1)
+                Device (ANS1)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
                     Method (_STA, 0, NotSerialized)  // _STA: Status
