@@ -313,7 +313,7 @@
 				<key>device_type</key>
 				<string>XSPI controller</string>
 				<key>model</key>
-				<string>Ice Lake-LP SPI Controller</string>
+				<string>Ice Lake-LP XSPI Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -1032,7 +1032,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02029501CD0000A8</string>
+			<string>C020412074N0000A8</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1044,9 +1044,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02D3YYFML7H</string>
+			<string>C02DJ0TFML7H</string>
 			<key>SystemUUID</key>
-			<string>678F819A-925C-4DB8-B483-C2224F2E0EB3</string>
+			<string>2F9D38C2-E628-4ADC-A3F7-169A97C24F94</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -1057,13 +1057,13 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02029501CD0000A8</string>
+			<string>C020412074N0000A8</string>
 			<key>ROM</key>
 			<data>2xUBZStI</data>
 			<key>SystemSerialNumber</key>
-			<string>C02D3YYFML7H</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>678F819A-925C-4DB8-B483-C2224F2E0EB3</string>
+			<string>2F9D38C2-E628-4ADC-A3F7-169A97C24F94</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1098,7 +1098,7 @@
 			<key>AppleEvent</key>
 			<string>Builtin</string>
 			<key>CustomDelays</key>
-			<string>Auto</string>
+			<false/>
 			<key>KeyInitialDelay</key>
 			<integer>50</integer>
 			<key>KeySubsequentDelay</key>
@@ -1216,7 +1216,7 @@
 			<key>DeviceProperties</key>
 			<false/>
 			<key>FirmwareVolume</key>
-			<true/>
+			<false/>
 			<key>HashServices</key>
 			<false/>
 			<key>OSInfo</key>
@@ -1230,12 +1230,18 @@
 			<false/>
 			<key>DisableSecurityPolicy</key>
 			<false/>
+			<key>EnableVectorAcceleration</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
+			<key>ForgeUefiSupport</key>
+			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
 			<true/>
+			<key>ReloadOptionRoms</key>
+			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>TscSyncTimeout</key>

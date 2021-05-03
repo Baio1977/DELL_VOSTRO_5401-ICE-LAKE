@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLRdaLEb.aml, Sat May  1 07:49:50 2021
+ * Disassembly of iASL1SfNfP.aml, Mon May  3 19:17:59 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000008A3 (2211)
+ *     Length           0x0000087C (2172)
  *     Revision         0x02
- *     Checksum         0xF1
+ *     Checksum         0xE2
  *     OEM ID           "Hack"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
@@ -466,21 +466,6 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
                         Else
                         {
                             Return (Zero)
-                        }
-                    }
-                }
-
-                Scope (XHC.RHUB)
-                {
-                    Method (_STA, 0, NotSerialized)  // _STA: Status
-                    {
-                        If (_OSI ("Darwin"))
-                        {
-                            Return (Zero)
-                        }
-                        Else
-                        {
-                            Return (0x0F)
                         }
                     }
                 }
