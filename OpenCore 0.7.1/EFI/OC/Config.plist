@@ -62,8 +62,6 @@
 			<false/>
 			<key>ResetLogoStatus</key>
 			<true/>
-			<key>SyncTableIds</key>
-			<false/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -1029,7 +1027,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C020412074N0000A8</string>
+			<string>C02040700J9P8PGFB</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1041,26 +1039,26 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DJ0TFML7H</string>
+			<string>C02DH01UML7H</string>
 			<key>SystemUUID</key>
-			<string>2F9D38C2-E628-4ADC-A3F7-169A97C24F94</string>
+			<string>0FCBEEC1-DDBA-4A9C-B1BE-E22CB90F53B5</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
 			<key>BID</key>
 			<string>Mac-5F9802EFE386AA28</string>
 			<key>FirmwareFeatures</key>
-			<data>ZvCv/QAAAAA=</data>
+			<data>bvCv/wAAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wAAAAA=</data>
 			<key>MLB</key>
-			<string>C020412074N0000A8</string>
+			<string>C02040700J9P8PGFB</string>
 			<key>ROM</key>
 			<data>2xUBZStI</data>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>C02DH01UML7H</string>
 			<key>SystemUUID</key>
-			<string>2F9D38C2-E628-4ADC-A3F7-169A97C24F94</string>
+			<string>0FCBEEC1-DDBA-4A9C-B1BE-E22CB90F53B5</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
