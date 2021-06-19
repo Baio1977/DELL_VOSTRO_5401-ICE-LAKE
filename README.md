@@ -31,7 +31,7 @@ EFI for Dell Vostro 5501 with OpenCore bootloader
 
 ![infobigsur](./Screenshot/infomac.png)
 
-![infobigsur](./Screenshot/infomacMonterey.png)
+![infomonterey](./Screenshot/infomacMonterey.png)
 
 ### What works and What doesn't or WIP:
 
