@@ -62,6 +62,8 @@
 			<false/>
 			<key>ResetLogoStatus</key>
 			<true/>
+			<key>SyncTableIds</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -509,9 +511,27 @@
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
-				<string></string>
+				<string>20.9.9</string>
 				<key>MinKernel</key>
 				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>BlueToolFixup.kext</string>
+				<key>Comment</key>
+				<string>BT patches</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BlueToolFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -1027,7 +1047,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02040700J9P8PGFB</string>
+			<string>C02042301QXP8PGCB</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1039,9 +1059,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DH01UML7H</string>
+			<string>C02DK00JML7H</string>
 			<key>SystemUUID</key>
-			<string>0FCBEEC1-DDBA-4A9C-B1BE-E22CB90F53B5</string>
+			<string>D2B3F1EB-8B25-4184-A3BC-EA6AC1614B55</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -1052,13 +1072,13 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02040700J9P8PGFB</string>
+			<string>C02042301QXP8PGCB</string>
 			<key>ROM</key>
 			<data>2xUBZStI</data>
 			<key>SystemSerialNumber</key>
-			<string>C02DH01UML7H</string>
+			<string>C02DK00JML7H</string>
 			<key>SystemUUID</key>
-			<string>0FCBEEC1-DDBA-4A9C-B1BE-E22CB90F53B5</string>
+			<string>D2B3F1EB-8B25-4184-A3BC-EA6AC1614B55</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
