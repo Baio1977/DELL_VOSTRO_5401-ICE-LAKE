@@ -31,6 +31,8 @@ EFI for Dell Vostro 5501 with OpenCore bootloader
 
 ![infobigsur](./Screenshot/infomac.png)
 
+![infomonterey](./Screenshot/infomacMonterey.png)
+
 ### What works and What doesn't or WIP:
 
 - [x] Intel Iris Plus iGPU eDP with Backlight Output
