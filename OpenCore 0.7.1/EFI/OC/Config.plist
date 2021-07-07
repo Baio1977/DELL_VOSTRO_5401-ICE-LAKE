@@ -867,7 +867,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Acidanthera\Chardonnay</string>
+			<string>HackintoshLife</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -974,7 +974,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 -noDC9 debug=0x100</string>
+				<string>-v keepsyms=1 debug=0x100 -noDC9</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1049,11 +1049,11 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02042100GUP8PGAD</string>
+			<string>C02051102GUP8PGAD</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>DTWPk6sd</data>
+			<data>0JJ0Nc4T</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -1061,9 +1061,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DKRYEML7H</string>
+			<string>C02DVXYZML7H</string>
 			<key>SystemUUID</key>
-			<string>5AB036D6-789E-4E45-911A-8F50641C3FFD</string>
+			<string>58997625-DC0D-4785-8EDB-9F52B135CE13</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -1074,13 +1074,13 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02042100GUP8PGAD</string>
+			<string>C02051102GUP8PGAD</string>
 			<key>ROM</key>
-			<data>DTWPk6sd</data>
+			<data>0JJ0Nc4T</data>
 			<key>SystemSerialNumber</key>
-			<string>C02DKRYEML7H</string>
+			<string>C02DVXYZML7H</string>
 			<key>SystemUUID</key>
-			<string>5AB036D6-789E-4E45-911A-8F50641C3FFD</string>
+			<string>58997625-DC0D-4785-8EDB-9F52B135CE13</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
